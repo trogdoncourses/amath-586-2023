@@ -10,7 +10,9 @@ Accompanying each assignment is a link for you to initialize a repository.  The 
 
 Lastly, homeworks will be submitted via gradescope: https://www.gradescope.com/courses/381632
 
-## Homework GitHub links (see Canvas for the assignment)
+## Homework GitHub links
+
+See Canvas for the assignment and turn in your write-up to Gradescope.
 
 1. [Homework 0: GitHub](https://classroom.github.com/a/bVqKaaYp)
 
