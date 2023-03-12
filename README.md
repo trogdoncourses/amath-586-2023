@@ -1,4 +1,4 @@
-# UW AMATH 586 Spring 2022
+# UW AMATH 586 Spring 2023
 
 On this page you will find homeworks, sample code, usually in the form of Jupyter notebooks, and additional materials and resources.
 
