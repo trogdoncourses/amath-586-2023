@@ -22,10 +22,10 @@ See Canvas for the assignment and turn in your write-up to Gradescope.
 
 ## Typed notes
 
-[Lecture Notes](https://github.com/trogdoncourses/amath-586-2022/blob/main/Numerical_Analysis.pdf)
+[Lecture Notes](https://github.com/trogdoncourses/amath-586-2023/blob/main/Numerical_Analysis.pdf)
 
-## Lecture Schedule (subject to change, sections listed refer to LeVeque)
+## Lecture Schedule (Note: section numbering for my notes is subject to change)
 
-* Lecture 1: 
+* Lecture 1: LeVeque: 2.1-2.4, My notes: 7.1
 
 ## Extra topics
