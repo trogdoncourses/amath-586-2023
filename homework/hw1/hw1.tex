@@ -1,0 +1,102 @@
+\documentclass[10pt]{amsart}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb,amsmath,enumitem}
+
+\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+\newcommand{\mkvec}[1]{\begin{bmatrix} \phantom{\frac 1 2} \\ #1 \\\phantom{\frac 1 2} \end{bmatrix}}
+
+\begin{document}
+
+%\topmargin -1.0in
+%\textheight 10.5in
+\pagestyle{empty}
+
+\newcommand{\mline}{\vspace{.2in}\hrule\vspace{.2in}}
+
+
+\title{\bf { AMATH 586 Spring 2023 \\ Homework 1 ---
+Due April 7 on Gradescope by 11pm} }
+\maketitle
+\begin{center} Be sure to do a {\tt git pull} to update your local
+  version of the {\tt amath-586-2023} repository.\\  Homeworks must be
+  typeset and uploaded to {\tt Gradescope} for submission.\\
+  Code should be uploaded to {\tt GitHub}
+  \end{center}
+
+\mline
+\begin{enumerate}[label={\bf Problem~{\arabic*}:}]
+\item In this exercise you will show convergence for a discretization of
+  \begin{align*}
+    \begin{cases}
+      -u''(x) = g(x),\\
+      u'(0) = \alpha,\\
+      u(1) = \beta.
+    \end{cases}
+  \end{align*}
+  \begin{enumerate}
+\item  Consider the $(m+1) \times (m+1)$ matrix
+  \begin{align*}
+    A = \begin{bmatrix} 1 & -1 \\ -1 & 2 &-1 \\
+    & \ddots & \ddots & \ddots \\
+    &&&& -1\\
+    &&&-1& 2\\
+  \end{bmatrix}.
+    \end{align*}
+    Find its Cholesky decomposition.
+  \item Show that
+    \begin{align}\label{unit} A^{-1} \begin{bmatrix}  1 \\ 0 \\ \vdots \\ 0 \end{bmatrix} = \begin{bmatrix}  m +1 \\ m \\ \vdots \\ 1 \end{bmatrix}.\end{align}
+  \item Now show that
+    \begin{align*}
+      \|A^{-1}\|_1 \leq (m+1)^2, \quad \|A^{-1}\|_\infty \leq (m+1)^2.
+    \end{align*}
+  \end{enumerate}
+
+\mline
+  
+  \item Consider the matrix (see (2.54) in LeVeque)
+    \begin{align*}
+      L = h^{-2} \begin{bmatrix} h & -h \\ -1 & 2 &-1 \\  
+    & \ddots & \ddots & \ddots \\
+    &&&& -1\\
+    &&&-1& 2\\
+  \end{bmatrix}.\end{align*}
+\begin{enumerate}
+  \item Compute $L^{-1}$ in terms of $A^{-1}$ and compute bounds for  $\|L^{-1}\|_1$ and $\|L^{-1}\|_\infty$.
+  \item Explain why this is not enough to imply convergence for the one-sided approach, (2.53) in LeVeque.
+    \item Use \eqref{unit} to show the method converges in both the grid 1-norm and the $\infty$-norm.
+  \end{enumerate}
+\mline
+
+\item Consider $u(x) = \cos(k \pi x) \exp(-x^2)$.  Determine $g$, $\alpha$ and $\beta$ such that
+  \begin{align*}
+    \begin{cases} -u''(x) = g(x),\\
+      u(0) = \alpha,\\
+      u(1) = \beta. \end{cases}
+  \end{align*}
+  \begin{enumerate}
+  \item Modify the code in {\tt LinearBVP.ipynb} to solve this BVP using a second-order accurate method.  Plot errors on a log-log scale for $k = 1,2,3,4$.
+   \item Modify the code in {\tt LinearBVP.ipynb} to solve this BVP using a fifth-order accurate method.  Plot errors on a log-log scale for $k = 1,2,3,4$. 
+  \end{enumerate}
+  \mline
+
+\item Modify the code in {\tt NonlinearBVP.ipynb} to solve
+  \begin{align*}
+ \begin{cases}
+ w'(x) - \epsilon w'''(x) = 0,\\
+ w(0) = 0,\\
+ w(L) = 0,\\
+ w'(L) = 1.
+ \end{cases}
+  \end{align*}
+ Demonstrate the convergence rate by comparing the computed solution
+ to the true solution for $\epsilon = 0.1, 0.01$.
+  
+  \end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
