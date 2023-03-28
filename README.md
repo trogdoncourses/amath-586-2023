@@ -12,9 +12,10 @@ Lastly, homeworks will be submitted via gradescope: https://www.gradescope.com/c
 
 ## Homework GitHub links
 
-See Canvas for the assignment and turn in your write-up to Gradescope.
+See Canvas or the homework folder for the assignment and turn in your write-up to Gradescope.
 
 1. [Homework 0: GitHub](https://classroom.github.com/a/bVqKaaYp)
+2. [Homework 1: GitHub](https://classroom.github.com/a/bPdpXLYF)
 
 ## Final Project/Exam
 
