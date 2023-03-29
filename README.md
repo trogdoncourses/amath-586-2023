@@ -28,5 +28,6 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 ## Lecture Schedule (Note: section numbering for my notes is subject to change)
 
 * Lecture 1: LeVeque: 2.1-2.4, My notes: 7.1
+* Lecture 2: LeVeque: 2.5, My notes 7.2 [Julia.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Julia.ipynb) [LinearBVP.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/LinearBVP.ipynb)
 
 ## Extra topics
