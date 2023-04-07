@@ -29,5 +29,9 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 
 * Lecture 1: LeVeque: 2.1-2.4, My notes: 7.1
 * Lecture 2: LeVeque: 2.5, My notes 7.2 [Julia.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Julia.ipynb) [LinearBVPs.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/LinearBVPs.ipynb)
+* Lecture 3: LeVeque: 2.7-10, My notes: 7.2
+* Lecture 4: LeVeque: 2.11, My notes: 7.3
+* Lecture 5: LeVeque: 2.12, My notes: 7.4
+* Lecture 6: LeVeque: 2.16, My notes: 7.4
 
 ## Extra topics
