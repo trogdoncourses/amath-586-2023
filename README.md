@@ -32,6 +32,6 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 3: LeVeque: 2.7-10, My notes: 7.2
 * Lecture 4: LeVeque: 2.11, My notes: 7.3
 * Lecture 5: LeVeque: 2.12, My notes: 7.4
-* Lecture 6: LeVeque: 2.16, My notes: 7.4 [NonlinearBVPs.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/NonlinearBVPs.ipynb)
+* Lecture 6: LeVeque: 2.16, My notes: 7.4 [NonlinearBVP.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/NonlinearBVP.ipynb)
 
 ## Extra topics
