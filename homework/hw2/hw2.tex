@@ -1,0 +1,108 @@
+\documentclass[10pt]{amsart}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb,amsmath,enumitem}
+
+\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+\newcommand{\mkvec}[1]{\begin{bmatrix} \phantom{\frac 1 2} \\ #1 \\\phantom{\frac 1 2} \end{bmatrix}}
+
+\begin{document}
+
+%\topmargin -1.0in
+%\textheight 10.5in
+\pagestyle{empty}
+
+\newcommand{\mline}{\vspace{.2in}\hrule\vspace{.2in}}
+
+
+\title{\bf { AMATH 586 Spring 2023 \\ Homework 2 ---
+Due April 21 on Gradescope by 11pm} }
+\maketitle
+\begin{center} Be sure to do a {\tt git pull} to update your local
+  version of the {\tt amath-586-2023} repository.\\  Homeworks must be
+  typeset and uploaded to {\tt Gradescope} for submission.\\
+  Code should be uploaded to {\tt GitHub}
+  \end{center}
+
+  \mline
+  
+  \begin{enumerate}[label={\bf Problem~{\arabic*}:}]
+\item Write a second-order accurate method to solve the following
+  boundary-value problem
+  \begin{align*}
+    \begin{cases}
+      (\kappa(x) u'(x))' = g(x),\\
+      u(0) = 1,\\
+      u(1) = 1,
+    \end{cases}
+  \end{align*}
+  where $\kappa(x) = \exp(-x/\epsilon) + \exp( (x-1)/\epsilon)$, $g(x) =
+  x(1-x)$.  Numerically verify your method is second-order accurate.
+  How will you do this if you do not know the solution explicitly?
+  Plot solutions for increasingly small values of $\epsilon$.
+
+  \mline
+
+\item Nonlinear pendulum.
+  \begin{enumerate}
+    \item Write a program to solve the boundary value problem for the
+nonlinear pendulum as discussed in LeVeque, Section 2.16.  See if you can find yet
+another solution for the boundary conditions illustrated in Figures 2.4
+and 2.5.
+
+\item Find a numerical solution to this BVP with the same
+general behavior as seen in Figure 2.5 for the case of a longer time
+interval, say $T=20$, again with $\alpha=\beta=0.7$.  Try larger values of
+$T$.  What does $\max_i \theta_i$ approach as $T$ is increased?  Note that
+for large $T$ this solution  exhibits ``boundary layers''.
+\end{enumerate}
+\mline
+
+\item
+  \begin{enumerate}
+  \item Consider the function
+    \begin{align}\label{u}
+      u(x,y) = \cos (k \pi x) \sin(k\pi y)
+      \exp(-(x - y)^2 ), \quad k \in \mathbb N.
+    \end{align}
+    Determine $h_0,h_1$, $g_0,g_1$ and $f$ such
+  that
+  \begin{align}\label{poisson}
+    \begin{cases}
+      u_{xx}(x,y) + u_{yy}(x,y) = f(x,y),\\
+      u(x,0) = g_0(x),\\
+      u(x,1) = g_1(x),\\
+      u(0,y) = h_0(y),\\
+      u(1,y) = h_1(y).
+      \end{cases}
+  \end{align}
+  \item Construct a second-order accurate method for this problem and
+    verify the order of accuracy numerically in both the $\infty$-norm
+    and the grid $2$-norm.  How does the convergence depend on $k$?
+  \end{enumerate}
+
+  \mline 
+  \item Consider the iterative solution the linear system that results
+    from \eqref{poisson} (when \eqref{u} is the solution).
+    \begin{enumerate}
+    \item Implement the Jacobi iteration to solve the linear system.
+    \item For a varying number of grid points, compare the convergence rate of the Jacobi iteration to the
+      conjugate gradient algorithm.
+      \item For a varying number of grid points, compare the convergence rate of the Jacobi iteration to
+        the diagonally-preconditioned conjugate gradient algorithm.
+    \end{enumerate}
+
+    \mline
+    \item Construct a fourth-order accurate method to solve \eqref{poisson}
+      (when \eqref{u} is the solution) and verify the order of
+      accuracy in the $\infty$-norm and the grid $2$-norm.  Is the conjugate gradient algorithm good for this
+      problem?  How about the Jacobi iteration?
+    
+  \end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
