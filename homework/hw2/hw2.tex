@@ -105,60 +105,7 @@ for large $T$ this solution  exhibits ``boundary layers''.
     
     \end{enumerate}
 
-     \mline
-\begin{lstlisting}
-## Julia
-function prand(m)
-  p = x -> -(2.0/3)*x.+4.0/3 .+ .5sin.(2*pi*x)
-  B = 1.7
-  out = fill(0.,m)
-  for j = 1:m
-    u = 10.
-    y = 0.
-    while u >= p(y)/B
-      y = rand()
-      u = rand()
-    end
-    out[j] = y
-  end
-  out     
-end
-  \end{lstlisting}
-    \begin{lstlisting}
- %% Matlab
- function out = prand(m) 
-    p = @(x) -(2/3)*x + 4/3 + .5*sin(2*pi*x);
-    B = 1.7;
-    out = zeros(m,1);
-    for j = 1:m
-        u = 10.;
-        y = 0.;
-        while u >= p(y)/B
-            y = rand();
-            u = rand();
-        end
-        out(j) = y;
-    end     
-end
-  \end{lstlisting}
-  \begin{lstlisting}
-## Python
-import numpy as np
     
-def psamp(m):
-  p = lambda x: -(2.0/3)*x +4.0/3 + 0.5*np.sin(2*np.pi*x)
-  B = 1.7
-  out = np.zeros(m)
-  for j in np.arange(m):
-    u = 10.
-    y = 0.
-    while u >= p(y)/B:
-      y = np.random.rand()
-      u = np.random.rand()
-    out[j] = y
-  return out
-\end{lstlisting}
-
 \end{document}
 
 %%% Local Variables:
