@@ -2,6 +2,10 @@
 \usepackage[margin=1.5in]{geometry}
 \usepackage{amssymb,amsmath,enumitem,mathdots}
 
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
 \DeclareMathOperator{\D}{d}
 \DeclareMathOperator{\E}{e}
 \newcommand{\mkvec}[1]{\begin{bmatrix} \phantom{\frac 1 2} \\ #1 \\\phantom{\frac 1 2} \end{bmatrix}}
@@ -155,7 +159,60 @@ U'(t) = \frac{1}{2h^2} B U(t), \quad B = \begin{bmatrix}
   \end{itemize}
   Note that this shows that if $\sum_j U_j^0 =1$ then at each step $n$ we can interpret $U_j^n$ as the evolution of a probability distribution.
     
-  
+   \mline
+\begin{lstlisting}
+## Julia
+function prand(m)
+  p = x -> -(2.0/3)*x.+4.0/3 .+ .5sin.(2*pi*x)
+  B = 1.7
+  out = fill(0.,m)
+  for j = 1:m
+    u = 10.
+    y = 0.
+    while u >= p(y)/B
+      y = rand()
+      u = rand()
+    end
+    out[j] = y
+  end
+  out     
+end
+  \end{lstlisting}
+    \begin{lstlisting}
+ %% Matlab
+ function out = prand(m) 
+    p = @(x) -(2/3)*x + 4/3 + .5*sin(2*pi*x);
+    B = 1.7;
+    out = zeros(m,1);
+    for j = 1:m
+        u = 10.;
+        y = 0.;
+        while u >= p(y)/B
+            y = rand();
+            u = rand();
+        end
+        out(j) = y;
+    end     
+end
+  \end{lstlisting}
+  \begin{lstlisting}
+## Python
+import numpy as np
+    
+def psamp(m):
+  p = lambda x: -(2.0/3)*x +4.0/3 + 0.5*np.sin(2*np.pi*x)
+  B = 1.7
+  out = np.zeros(m)
+  for j in np.arange(m):
+    u = 10.
+    y = 0.
+    while u >= p(y)/B:
+      y = np.random.rand()
+      u = np.random.rand()
+    out[j] = y
+  return out
+\end{lstlisting}
+
   
     
   \end{enumerate}
