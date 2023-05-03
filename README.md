@@ -45,4 +45,4 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 14: LeVeque: 9.5, My notes: 10.6-7
 * Lecture 15: LeVeque: 9.6, My notes: 11.1-2
 * Lecture 16: LeVeque: 9.7, My notes: 10.8 [CrankNicolson2D.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/CrankNicolson2D.ipynb)
-* Lecture 17: LeVeque: 9.8
+* Lecture 17: LeVeque: 9.8, My notes: 10.8
