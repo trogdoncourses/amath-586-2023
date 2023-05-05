@@ -18,6 +18,7 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 2. [Homework 1: GitHub](https://classroom.github.com/a/bPdpXLYF)
 3. [Homework 2: GitHub](https://classroom.github.com/a/ZxVi2K3J)
 4. [Homework 3: GitHub](https://classroom.github.com/a/jRgm13jv)
+5. [Homework 4: GitHub](https://classroom.github.com/a/aRT_UrfI)
 
 ## Final Project/Exam
 
