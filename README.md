@@ -39,3 +39,10 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 8: LeVeque: 3.1, 4.1-4.3 My notes: 9.1
 * Lecture 9: LeVeque: 3.2-3, My notes: 9.2 [IterativeMethodsReview.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/IterativeMethodsReview.ipynb)
 * Lecture 10: LeVeque: 3.1-4, My notes: 9.1-2 [EllipticPDEs.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/EllipticPDEs.ipynb)
+* Lecture 11: LeVeque: 7.1-3, 9.1-2, My notes: 10.1-2
+* Lecture 12: LeVeque: 9.0, 9.3, My notes: 10.3-4
+* Lecture 13: LeVeque: 9.1, My notes: 10.5 [CrankNicolson.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/CrankNicolson.ipynb)
+* Lecture 14: LeVeque: 9.5, My notes: 10.6-7
+* Lecture 15: LeVeque: 9.6, My notes: 11.1-2
+* Lecture 16: LeVeque: 9.7, My notes: 10.8 [CrankNicolson2D.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/CrankNicolson2D.ipynb)
+* Lecture 17: LeVeque: 9.8, My notes: 10.8
