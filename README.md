@@ -50,4 +50,4 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 18: LeVeque: 10.1-2, My notes: 12.1
 * Lecture 19: LeVeque: 10.2-3, My notes: 12.2-3
 * Lecture 20: LeVeque: 10.5, My notes: 13.0 [Advection.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Advection.ipynb) [Advection-Caution.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Advection-Caution.ipynb)
-* Lecture 21:
+* Lecture 21: LeVeque 10.6, 10.9, My notes: 13.1-2
