@@ -48,3 +48,9 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 16: LeVeque: 9.7, My notes: 10.8 [CrankNicolson2D.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/CrankNicolson2D.ipynb)
 * Lecture 17: LeVeque: 9.8, My notes: 10.8
 * Lecture 18: LeVeque: 10.1-2, My notes: 12.1
+* Lecture 19: LeVeque: 10.2-3, My notes: 12.2-3
+* Lecture 20: LeVeque: 10.5, My notes: 13.0 [Advection.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Advection.ipynb) [Advection-Caution.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Advection-Caution.ipynb)
+* Lecture 21: LeVeque 10.6, 10.9, My notes: 13.1-2
+* Lecture 22: LeVeque 10.10-12, 11.1-4, My notes: 14.1-2
+* Lecture 23: My notes: Appendix C
+* Lecture 24: My notes: 15.1
