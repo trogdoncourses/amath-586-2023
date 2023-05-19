@@ -1,0 +1,142 @@
+\documentclass[10pt]{amsart}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amssymb,amsmath,enumitem}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
+\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand\unp{U^{n+1}}
+\newcommand\unm{U^{n-1}}
+\newcommand{\bigo}{{\mathrm O}}
+\newcommand{\reals}{\mathbb R}
+
+
+\newcommand{\I}{\text{i}}
+
+\begin{document}
+
+%\topmargin -1.0in
+%\textheight 10.5in
+\pagestyle{empty}
+
+\newcommand{\mline}{\vspace{.2in}\hrule\vspace{.2in}}
+
+
+\title{\bf { AMATH 586 Spring 2023 \\ Homework 5 ---
+Due May 26 by 11pm} }
+\maketitle
+\begin{center} Be sure to do a {\tt git pull} to update your local
+  version of the {\tt amath-586-2023} repository.\\  Homeworks must be
+  typeset and uploaded to {\tt Gradescope} for submission.\\
+  The submitted homework must include plots and descriptions of your code.\\
+  Code should be uploaded to {\tt GitHub}.\\
+  You must include your name and {\tt GitHub} username on your assignment.
+  \end{center}
+
+\mline
+\begin{enumerate}[label={\bf Problem~{\arabic*}:}]
+\item  Consider solving
+  \begin{align*}
+    \begin{cases} u_t + u_{xxx} = 0, \quad -1 < x < 1\\
+      u(x,0) = \eta(x),\\
+      u(-1,t) = u(1,t),\\
+      u_x(-1,t) = u_x(1,t),\\
+      u_{xx}(-1,t) = u_{xx}(1,t).\end{cases}
+    \end{align*}
+    This is the linear KdV (Airy) equation with periodic boundary conditions.
+    \begin{itemize}
+    \item Use a second-order accurate centered difference and the trapezoid method as a time-stepper. Can you see dispersive quantization? Use $\eta(x) = 1$ if $-1/2 < x < 1/2$ and $\eta(x) =0$ otherwise.
+    \item Prove that the method is Lax-Richtmyer stable.  Discuss whether or not it is convergent with this initial condition.
+    \end{itemize}
+
+    \mline
+
+  \item Consider solving
+  \begin{align*}
+    \begin{cases} u_t + 3 (u^2)_x + u_{xxx} = 0, \quad -L < x < L,\\
+      u(x,0) = \eta(x),\\
+      u(-L,t) = u(L,t),\\
+      u_x(-L,t) = u_x(L,t),\\
+      u_{xx}(-L,t) = u_{xx}(L,t).\end{cases}
+    \end{align*}
+    This is the KdV equation with periodic boundary conditions.
+    \begin{itemize}
+    \item Use a second-order accurate centered difference and the trapezoid method as a time-stepper to solve this problem with
+      \begin{align*}
+        \eta(x) = 4 \mathrm{sech}(x)^2.
+      \end{align*}
+      Note that you will need to implement Newton's method for this and use it at each time step.
+    \item You need not prove this, but give an argument that the method Lax-Richtmyer stable.  This is easier if you use $(u^2)_x$ in the PDE as opposed to $2 u u_x$!
+    \end{itemize}
+
+    \item Consider solving the small-dispersion (semi-classical) NLS equation
+  \begin{align*}
+    \begin{cases}
+      \I \epsilon u_t + \frac{\epsilon^2}{2} u_{xx} + |u|^2 u = 0, \quad -\infty < x < \infty,\\
+      u(x,0) = A(x) e^{\I S(x)/\epsilon},\\
+      A(x) = - \mathrm{sech}(x),\\
+      S(x) = - \mu \log \cosh (x), \quad \mu = 0.1.
+    \end{cases}
+    \end{align*}
+        Use the Fourier exponential integrator with Runge--Kutta 4 to solve this on $[-L, L]$ for sufficiently large $L$.  Use $\epsilon = 0.1$ and $\epsilon = 0.05$ and produce a contour plot of the squared modulus of the solution for $t \in [0,4]$ for both values of $\epsilon$.  Argue that you have chosen $L$ sufficiently large and have chosen a sufficiently large number of Fourier modes.
+
+        \mline 
+
+\item Consider solving
+  \begin{align*}
+    \begin{cases} u_t + 3 (u^2)_x + u_{xxx} = 0, \quad -L < x < L,\\
+      u(x,0) = \eta(x),\\
+      u(-L,t) = u(L,t),\\
+      u_x(-L,t) = u_x(L,t),\\
+      u_{xx}(-L,t) = u_{xx}(L,t).\end{cases}
+    \end{align*}
+    This is the KdV equation with periodic boundary conditions.
+    \begin{itemize}
+    \item Use a second-order accurate centered difference and the trapezoid method as a time-stepper to solve this problem with
+      \begin{align*}
+        \eta(x) = 4 \mathrm{sech}(x)^2.
+      \end{align*}
+      Note that you will need to implement Newton's method for this and use it at each time step.
+    \item You need not prove this, give some rationale as to why you might hope this method is Lax-Richtmyer stable.  
+    \end{itemize}
+    \mline
+
+    \item Consider solving the small-dispersion (semi-classical) NLS equation
+  \begin{align*}
+    \begin{cases}
+      \I \epsilon u_t + \frac{\epsilon^2}{2} u_{xx} + |u|^2 u = 0, \quad -\infty < x < \infty,\\
+      u(x,0) = A(x) e^{\I S(x)/\epsilon},\\
+      A(x) = - \mathrm{sech}(x),\\
+      S(x) = - \mu \log \cosh (x), \quad \mu = 0.1.
+    \end{cases}
+    \end{align*}
+    Use the Fourier exponential integrator with Runge--Kutta 4 to solve this on $[-L, L]$ for sufficiently large $L$.  Use $\epsilon = 0.1$ and $\epsilon = 0.05$ and produce a contour plot of the squared modulus of the solution for $t \in [0,4]$ for both values of $\epsilon$.  Argue that you have chosen $L$ sufficiently large and have chosen a sufficiently large number of Fourier modes.
+
+    \mline
+
+    \item Consider solving the Kuramoto--Sivashinsky equation with periodic boundary conditions
+ \begin{align*}
+    \begin{cases} u_t + u u_x + u_{xx} + u_{xxxx} = 0, \quad -L < x <L,\\
+      u(x,0) = \eta(x),\\
+      u(-L,t) = u(L,t),\\
+      u_x(-L,t) = u_x(L,t),\\
+      u_{xx}(-L,t) = u_{xx}(L,t),\\
+      u_{xxx}(-L,t) = u_{xxx}(L,t).
+    \end{cases}
+ \end{align*}
+ Use the ETDRK4 method using Fourier series to solve this problem with $L = 16 \pi$, $\eta(x) = \cos(x/16) (1 + \sin(x/16))$.  Create a contour plot of the solution for $t \in [0,150]$.
+        
+  
+\end{enumerate}
+
+
+
+  
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
