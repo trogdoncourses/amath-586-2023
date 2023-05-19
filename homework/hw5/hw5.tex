@@ -65,43 +65,13 @@ Due May 26 by 11pm} }
     \begin{itemize}
     \item Use a second-order accurate centered difference and the trapezoid method as a time-stepper to solve this problem with
       \begin{align*}
-        \eta(x) = 4 \mathrm{sech}(x)^2.
-      \end{align*}
-      Note that you will need to implement Newton's method for this and use it at each time step.
-    \item You need not prove this, but give an argument that the method Lax-Richtmyer stable.  This is easier if you use $(u^2)_x$ in the PDE as opposed to $2 u u_x$!
-    \end{itemize}
-
-    \item Consider solving the small-dispersion (semi-classical) NLS equation
-  \begin{align*}
-    \begin{cases}
-      \I \epsilon u_t + \frac{\epsilon^2}{2} u_{xx} + |u|^2 u = 0, \quad -\infty < x < \infty,\\
-      u(x,0) = A(x) e^{\I S(x)/\epsilon},\\
-      A(x) = - \mathrm{sech}(x),\\
-      S(x) = - \mu \log \cosh (x), \quad \mu = 0.1.
-    \end{cases}
-    \end{align*}
-        Use the Fourier exponential integrator with Runge--Kutta 4 to solve this on $[-L, L]$ for sufficiently large $L$.  Use $\epsilon = 0.1$ and $\epsilon = 0.05$ and produce a contour plot of the squared modulus of the solution for $t \in [0,4]$ for both values of $\epsilon$.  Argue that you have chosen $L$ sufficiently large and have chosen a sufficiently large number of Fourier modes.
-
-        \mline 
-
-\item Consider solving
-  \begin{align*}
-    \begin{cases} u_t + 3 (u^2)_x + u_{xxx} = 0, \quad -L < x < L,\\
-      u(x,0) = \eta(x),\\
-      u(-L,t) = u(L,t),\\
-      u_x(-L,t) = u_x(L,t),\\
-      u_{xx}(-L,t) = u_{xx}(L,t).\end{cases}
-    \end{align*}
-    This is the KdV equation with periodic boundary conditions.
-    \begin{itemize}
-    \item Use a second-order accurate centered difference and the trapezoid method as a time-stepper to solve this problem with
-      \begin{align*}
         \eta(x) = 4 \mathrm{sech}(x)^2, \quad L = 10.
       \end{align*}
       Note that you will need to implement Newton's method for this and use it at each time step.
     \item You need not prove this, give some rationale as to why you might hope this method is Lax-Richtmyer stable.  
     \end{itemize}
-    \mline
+    
+        \mline 
 
     \item Consider solving the small-dispersion (semi-classical) focusing NLS equation
   \begin{align*}
