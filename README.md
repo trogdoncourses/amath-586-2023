@@ -23,7 +23,7 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 
 ## Final Project/Exam
 
-1. TBD
+1. [Final: GitHub](https://classroom.github.com/a/KrrrRRyB)
 
 ## Typed notes
 
