@@ -57,6 +57,6 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 24: My notes: 15.1
 * Lecture 25:
 * Lecture 26:
-* Lecture 27:
-* Lecture 28: [Exponential time differencing.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Exponential time differencing.ipynb) 
+* Lecture 27: [Exponential_time_differencing.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Exponential_time_differencing.ipynb) 
+* Lecture 28: 
 * Lecture 29:
