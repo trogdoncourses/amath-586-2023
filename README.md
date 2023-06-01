@@ -54,9 +54,9 @@ See Canvas or the homework folder for the assignment and turn in your write-up t
 * Lecture 21: LeVeque 10.6, 10.9, My notes: 13.1-2
 * Lecture 22: LeVeque 10.10-12, 11.1-4, My notes: 14.1-2
 * Lecture 23: My notes: Appendix C
-* Lecture 24: My notes: 15.1
-* Lecture 25:
-* Lecture 26:
-* Lecture 27: [Exponential_time_differencing.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Exponential_time_differencing.ipynb) 
-* Lecture 28: 
+* Lecture 24: My notes: Appendix C, 15.1
+* Lecture 25: My notes: 15.1
+* Lecture 26: My notes: 15.1 [Exponential_integration_dispersive.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Exponential_integration_dispersive.ipynb) 
+* Lecture 27: My notes: 15.2 [Exponential_time_differencing.ipynb](https://github.com/trogdoncourses/amath-586-2023/blob/main/notebooks/Exponential_time_differencing.ipynb) 
+* Lecture 28: My notes: 16.1
 * Lecture 29:
